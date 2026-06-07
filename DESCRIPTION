@@ -1,0 +1,26 @@
+Package: aqdatapipeline
+Title: Download and Process Air Quality Data
+Version: 0.1.1
+Authors@R: person("Joseph", "Grealy", role = c("aut", "cre"),
+    email = "joseph@example.com")
+Description: Downloads air quality data, initially from the UK Automatic Urban
+    and Rural Network using openair, stores it as a partitioned local Parquet
+    dataset, and calculates daily, monthly, and annual means from hourly
+    observations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.2.0)
+Imports:
+    arrow,
+    dplyr,
+    lubridate,
+    openair,
+    readr,
+    rlang,
+    tibble
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,7 @@
+^\.DS_Store$
+^\.Rproj\.user$
+^\.vscode$
+^data$
+^logs$
+^renv$
+^renv\.lock$
