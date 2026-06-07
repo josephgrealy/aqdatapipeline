@@ -5,3 +5,4 @@
 ^logs$
 ^renv$
 ^renv\.lock$
+^.*\.Rproj$
