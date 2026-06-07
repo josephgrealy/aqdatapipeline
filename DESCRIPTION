@@ -1,6 +1,6 @@
 Package: aqdatapipeline
 Title: Download and Process Air Quality Data
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person("Joseph", "Grealy", role = c("aut", "cre"),
     email = "joseph@example.com")
 Description: Downloads air quality data, initially from the UK Automatic Urban

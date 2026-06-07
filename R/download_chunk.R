@@ -12,6 +12,9 @@ download_chunk <- function(
     sitecodes, years, pollutant, data_type,
     import_fun = openair::importAURN) {
   warnings <- character()
+  existing_connection_ids <- open_connection_ids()
+  on.exit(close_new_connections(existing_connection_ids), add = TRUE)
+
   result <- tryCatch(
     withCallingHandlers(
       import_fun(

@@ -216,6 +216,11 @@ untouched. The pipeline validates the expected partition values before writing.
 Empty and failed chunks are recorded but are not considered complete by resume
 mode.
 
+Around every openair import attempt, the pipeline records the connections that
+are already open and then closes only connections opened by that import. Cleanup
+runs after successful, empty, warning-producing, and failed imports, followed by
+garbage collection; connections that predate the download are left open.
+
 Selecting a pollutant or data type limits which chunks are requested and
 refreshed. It does not remove unrelated data already present in the database.
 

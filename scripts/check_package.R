@@ -1,4 +1,4 @@
-required_version <- package_version("0.1.1")
+required_version <- package_version("0.1.2")
 
 if (!requireNamespace("aqdatapipeline", quietly = TRUE)) {
   stop(
